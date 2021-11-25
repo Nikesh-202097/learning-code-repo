@@ -100,58 +100,33 @@ int main(){
     
 
     auto start2 = high_resolution_clock::now();
-
     linear_search(newarr,1000,567);
-
     auto stop2 = high_resolution_clock::now();
-
     auto duration2 = duration_cast<nanoseconds>(stop2 - start2);
-  
     cout << "Time taken by linear  search: "<< duration2.count() << " nanoseconds" << endl;
     
     
-
     auto start3 = high_resolution_clock::now();
-
     quick_sort(newarr,0,1000);
-
     auto stop3 = high_resolution_clock::now();
-
     auto duration3 = duration_cast<microseconds>(stop3 - start3);
-  
     cout << "Time taken by quick sort: " << duration3.count() << " microseconds" << endl;
     
     
-
     auto start4 = high_resolution_clock::now();
-
     buble_sort(arr,1000);
-
     auto stop4 = high_resolution_clock::now();
-
     auto duration4 = duration_cast<microseconds>(stop4 - start4);
-  
     cout << "Time taken by buble sort: "<< duration4.count() << " microseconds" << endl;
     
     
     auto start = high_resolution_clock::now();
-
     binary_search(newarr,1000,567);//pass sorted array
-
     auto stop = high_resolution_clock::now();
-
     auto duration = duration_cast<nanoseconds>(stop - start);
-  
     cout << "Time taken by binary search: "<< duration.count() << " nanoseconds" << endl;
 
 
-
     return 0;
-
-
-
-
-
-
 
 }
