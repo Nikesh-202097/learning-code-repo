@@ -126,14 +126,6 @@ int main(){
     auto duration = duration_cast<nanoseconds>(stop - start);
     cout << "Time taken by binary search: "<< duration.count() << " nanoseconds" << endl;
 
-<<<<<<< HEAD
-
     return 0;
 
 }
-=======
-    
-    return 0;
-
-}
->>>>>>> d84d9f1aef36b99ae28082cde6161f6c35d71887
